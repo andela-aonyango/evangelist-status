@@ -1,0 +1,45 @@
+{
+    "name": "andela-aonyango/evangelist_status",
+    "type": "library",
+    "description": "A package which allows the user to request the evangelist status of a developer based on the number of public repos.",
+    "keywords": [
+        "andela-aonyango",
+        "evangelist_status"
+    ],
+    "homepage": "https://github.com/andela-aonyango/evangelist_status",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "andela-aonyango",
+            "email": "andrew.onyango@andela.com",
+            "homepage": "https://github.com/andela-aonyango",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "andela-aonyango\\evangelist_status\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "andela-aonyango\\evangelist_status\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
