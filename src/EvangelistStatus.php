@@ -42,7 +42,7 @@ class EvangelistStatus
         curl_setopt($curl_handle, CURLOPT_URL, $url);
         curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1); 
         curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 10);
-        curl_setopt($curl_handle, CURLOPT_USERAGENT, "evangelist_status");
+        curl_setopt($curl_handle, CURLOPT_USERAGENT, "evangelist-status");
         $content = curl_exec($curl_handle);
         curl_close($curl_handle);
         return $content;
