@@ -8,16 +8,21 @@ class EvangelistStatus
 
     public function __construct($username)
     {
-        $this->setStatus($username);
+        $repos = $this->getNumberOfRepos($username);
+        $this->setStatus($repos);
     }
 
-    private function setStatus($username)
+    private function getNumberOfRepos($username)
     {
-        $url = 'https://api.github.com/users/';
-        $json = $this->getGithubInfo($url . $username);
+        $url = 'https://api.github.com/users/' . $username;
+        $json = $this->getGithubInfo($url);
         $obj = json_decode($json);
-        $repos = $obj->{'public_repos'};
 
+        return $obj->{'public_repos'};
+    }
+
+    private function setStatus($repos)
+    {
         if ($repos >= 5 && $repos <= 10) {
             $this->status = "Prodigal Junior Evangelist";
         }
