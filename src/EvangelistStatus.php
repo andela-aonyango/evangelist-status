@@ -1,6 +1,6 @@
 <?php
 
-namespace Package\Evangelist;
+namespace Lib;
 
 class EvangelistStatus
 {

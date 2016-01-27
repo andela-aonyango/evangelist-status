@@ -1,8 +1,10 @@
 <?php
 
-namespace Package\Evangelist\Test;
+namespace Lib\Test;
 
-class ExampleTest extends \PHPUnit_Framework_TestCase
+use Lib\EvangelistStatus;
+
+class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
 {
     public function testGetStatus()
     {
