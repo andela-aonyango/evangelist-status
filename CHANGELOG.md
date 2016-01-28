@@ -4,10 +4,11 @@ All Notable changes to `evangelist-status` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## NEXT - YYYY-MM-DD
+## v1.0.2 - 2016-01-28
 
 ### Added
-- Nothing
+- NullUserException Class
+- ExceptionsTest Class
 
 ### Deprecated
 - Nothing
@@ -20,3 +21,7 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ### Security
 - Nothing
+
+### Refactored
+- GitHubAPI Class
+- EvangelistStatus Class
