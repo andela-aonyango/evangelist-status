@@ -6,6 +6,9 @@ use Lib\EvangelistStatus;
 
 class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+    *Tests all the possible statuses an evangelist might have
+    */
     public function testGetStatus()
     {
         $status = new EvangelistStatus("andela-aomondi");

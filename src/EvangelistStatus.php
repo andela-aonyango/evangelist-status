@@ -14,6 +14,13 @@ class EvangelistStatus
         $this->setStatus($repos);
     }
 
+
+    /**
+     * Sets the developer's evangelist status
+     *
+     * @param  mixed $repos The number of public repos a developer has on GitHub
+     *
+     */
     private function setStatus($repos)
     {
         if ($repos >= 5 && $repos <= 10) {
@@ -30,6 +37,12 @@ class EvangelistStatus
         }
     }
 
+    /**
+     * Returns the developer's evangelist status
+     *
+     * @return  string
+     *
+     */
     public function getStatus()
     {
         return $this->status;
