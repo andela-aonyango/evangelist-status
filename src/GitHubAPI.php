@@ -29,11 +29,11 @@ class GitHubAPI
             throw new NullUserException("A username is required");
         }
 
-        $url = 'https://api.github.com/users/' . $username;
+        $url = "https://api.github.com/users/" . $username;
         $json = self::getGithubInfo($url, "evangelist-status");
         $obj = json_decode($json);
 
-        return $obj->{'public_repos'};
+        return $obj->{"public_repos"};
     }
 
     /**
