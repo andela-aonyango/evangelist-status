@@ -18,8 +18,7 @@ class EvangelistStatus
     /**
      * Sets the developer's evangelist status
      *
-     * @param  mixed $repos The number of public repos a developer has on GitHub
-     *
+     * @param mixed $repos The number of public repos a developer has on GitHub
      */
     private function setStatus($repos)
     {
@@ -40,8 +39,7 @@ class EvangelistStatus
     /**
      * Returns the developer's evangelist status
      *
-     * @return  string
-     *
+     * @return string
      */
     public function getStatus()
     {

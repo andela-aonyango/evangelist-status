@@ -9,7 +9,8 @@ class NullUserException extends \Exception
     /**
      * @param string $message
      */
-    public function __construct($message) {
+    public function __construct($message) 
+    {
         $this->message = $message;
 
         // make sure everything is properly assigned
