@@ -17,12 +17,12 @@ use Lib\GitHubAPI;
  */
 class EvangelistStatus
 {
-    private $_status;
+    private $status;
 
     public function __construct($username)
     {
         $repos = GitHubAPI::getNumberOfRepos($username);
-        $this->_setStatus($repos);
+        $this->setStatus($repos);
     }
 
 
@@ -31,16 +31,16 @@ class EvangelistStatus
      *
      * @param mixed $repos The number of public repos a developer has on GitHub
      */
-    private function _setStatus($repos)
+    private function setStatus($repos)
     {
         if ($repos >= 5 && $repos <= 10) {
-            $this->_status = "Prodigal Junior Evangelist";
+            $this->status = "Prodigal Junior Evangelist";
         } elseif ($repos >=11 && $repos <= 20) {
-            $this->_status = "Associate Evangelist";
+            $this->status = "Associate Evangelist";
         } elseif ($repos > 20) {
-            $this->_status = "Senior Evangelist";
+            $this->status = "Senior Evangelist";
         } else {
-            $this->_status = "You call yourself a programmer?!!";
+            $this->status = "You call yourself a programmer?!!";
         }
     }
 
@@ -51,6 +51,6 @@ class EvangelistStatus
      */
     public function getStatus()
     {
-        return $this->_status;
+        return $this->status;
     }
 }

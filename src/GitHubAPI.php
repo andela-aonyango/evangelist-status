@@ -25,12 +25,12 @@ class GitHubAPI
      */
     public static function getNumberOfRepos($username)
     {
-        if (empty($username) || empty(trim($username))) {
+        if (empty(trim($username))) {
             throw new NullUserException("A username is required");
         }
 
         $url = 'https://api.github.com/users/' . $username;
-        $json = self::_getGithubInfo($url, "evangelist-status");
+        $json = self::getGithubInfo($url, "evangelist-status");
         $obj = json_decode($json);
 
         return $obj->{'public_repos'};
@@ -43,8 +43,9 @@ class GitHubAPI
      * @param  string $useragent The user agent or app name required by GitHub
      * @return string
      */
-    private static function _getGithubInfo($url, $useragent) 
+    private static function getGithubInfo($url, $useragent) 
     {
+        // use guzzle, gouete
         $curl_handle = curl_init();
         curl_setopt($curl_handle, CURLOPT_URL, $url);
         curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1); 
