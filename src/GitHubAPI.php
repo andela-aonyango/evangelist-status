@@ -23,7 +23,7 @@ class GitHubAPI
      * @return mixed
      * @throws NullUserException
      */
-    public function getNumberOfRepos($username)
+    public static function getNumberOfRepos($username)
     {
         if (empty($username) || empty(trim($username))) {
             throw new NullUserException("A username is required");
@@ -43,7 +43,7 @@ class GitHubAPI
      * @param  string $useragent The user agent or app name required by GitHub
      * @return string
      */
-    private function _getGithubInfo($url, $useragent) 
+    private static function _getGithubInfo($url, $useragent) 
     {
         $curl_handle = curl_init();
         curl_setopt($curl_handle, CURLOPT_URL, $url);
