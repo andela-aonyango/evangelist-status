@@ -9,12 +9,13 @@
 namespace Lib\Test;
 
 use Lib\EvangelistStatus;
+use PHPUnit_Framework_TestCase;
 
 /**
  * @category Class
  * @package  Lib\EvangelistStatus
  */
-class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
+class EvangelistStatusTest extends PHPUnit_Framework_TestCase
 {
     /**
     *Tests all the possible statuses an evangelist might have

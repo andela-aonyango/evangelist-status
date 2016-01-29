@@ -9,12 +9,13 @@
 namespace Lib\Test;
 
 use Lib\EvangelistStatus;
+use PHPUnit_Framework_TestCase;
 
 /**
  * @category Class
  * @package  Lib\EvangelistStatus
  */
-class ExceptionsTest extends \PHPUnit_Framework_TestCase
+class ExceptionsTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @expectedException Lib\Exceptions\NullUserException
