@@ -1,9 +1,19 @@
 <?php
-
+/**
+ * @file     EvangelistStatusTest.php
+ * This file is a class that contains tests for the EvangelistStatus class
+ * @package  Lib\EvangelistStatus
+ * @author   andrew <andrew.onyango@andela.com>
+ * @license  MIT => https://opensource.org/licenses/MIT
+ */
 namespace Lib\Test;
 
 use Lib\EvangelistStatus;
 
+/**
+ * @category Class
+ * @package  Lib\EvangelistStatus
+ */
 class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
 {
     /**

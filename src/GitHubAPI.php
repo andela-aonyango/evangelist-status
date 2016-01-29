@@ -1,9 +1,19 @@
 <?php
-
+/**
+ * @file     GitHubAPI.php
+ * This file is a class that retrieves GitHub API information
+ * @package  Lib\EvangelistStatus
+ * @author   andrew <andrew.onyango@andela.com>
+ * @license  MIT => https://opensource.org/licenses/MIT
+ */
 namespace Lib;
 
 use Lib\Exceptions\NullUserException;
 
+/**
+ * @category Class
+ * @package  Lib\EvangelistStatus
+ */
 class GitHubAPI
 {
     /**
@@ -20,7 +30,7 @@ class GitHubAPI
         }
 
         $url = 'https://api.github.com/users/' . $username;
-        $json = self::getGithubInfo($url, "evangelist-status");
+        $json = self::_getGithubInfo($url, "evangelist-status");
         $obj = json_decode($json);
 
         return $obj->{'public_repos'};
@@ -33,7 +43,7 @@ class GitHubAPI
      * @param  string $useragent The user agent or app name required by GitHub
      * @return string
      */
-    private function getGithubInfo($url, $useragent) 
+    private function _getGithubInfo($url, $useragent) 
     {
         $curl_handle = curl_init();
         curl_setopt($curl_handle, CURLOPT_URL, $url);
