@@ -3,7 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-scrutinizer-build]][link-scrutinizer-build]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
+[![Coverage Status][ico-coveralls]][link-coveralls]
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
@@ -54,16 +54,14 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/andela-aonyango/evangelist-status.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/andela-aonyango/evangelist-status/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/andela-aonyango/evangelist-status.svg?style=flat-square
 [ico-scrutinizer-build]: https://scrutinizer-ci.com/g/andela-aonyango/evangelist-status/badges/build.png?b=master
+[ico-coveralls]: https://coveralls.io/repos/github/andela-aonyango/evangelist-status/badge.svg?branch=master
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/andela-aonyango/evangelist-status.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/andela-aonyango/evangelist-status.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/andela-aonyango/evangelist-status
-[link-travis]: https://travis-ci.org/andela-aonyango/evangelist-status
-[link-scrutinizer]: https://scrutinizer-ci.com/g/andela-aonyango/evangelist-status/code-structure
 [link-scrutinizer-build]: https://scrutinizer-ci.com/g/andela-aonyango/evangelist-status/build-status/master
+[link-coveralls]: https://coveralls.io/github/andela-aonyango/evangelist-status?branch=master
 [link-code-quality]: https://scrutinizer-ci.com/g/andela-aonyango/evangelist-status
 [link-downloads]: https://packagist.org/packages/andela-aonyango/evangelist-status
 [link-author]: https://github.com/andela-aonyango
