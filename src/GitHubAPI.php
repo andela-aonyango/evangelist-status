@@ -9,8 +9,6 @@
 
 namespace Lib;
 
-use Lib\Exceptions\NullUserException;
-use Lib\Exceptions\UserNotFoundException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 
@@ -52,7 +50,7 @@ class GitHubAPI
 
         try {
             $response = $client->get($username);
-            $info = $response->getBody(true);
+            return $response->getBody(true);
         } catch (ClientException $e) {
             if ($e->getCode() === 404) {
                 throw new UserNotFoundException(
@@ -60,7 +58,5 @@ class GitHubAPI
                 );
             }
         }
-
-        return $info;
     }
 }
