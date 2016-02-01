@@ -9,6 +9,8 @@
 
 namespace Lib;
 
+use Lib\Exceptions\NullUserException;
+use Lib\Exceptions\UserNotFoundException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 
