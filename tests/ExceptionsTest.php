@@ -25,4 +25,12 @@ class ExceptionsTest extends PHPUnit_Framework_TestCase
         // should throw an exception even if there are spaces
         $status = new EvangelistStatus("    ");
     }
+
+    /**
+     * @expectedException Lib\Exceptions\UserNotFoundException
+     */
+    public function testUserNotFoundException()
+    {
+        $status = new EvangelistStatus("kjashdajkhsdg");
+    }
 }
