@@ -7,13 +7,16 @@
  * @author   andrew <andrew.onyango@andela.com>
  * @license  MIT => https://opensource.org/licenses/MIT
  */
+
 namespace Lib\Exceptions;
+
+use Exception;
 
 /**
  * @category Class
  * @package  Lib\EvangelistStatus
  */
-class NullUserException extends \Exception
+class NullUserException extends Exception
 {
     protected $message;
 
